@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application of Multimedia Elements and forms</title>
+</head>
+<body>
+    <main>
+        <section>
+            <!-- Add an ordered list with roman numerals starts here -->
+            <h2>Steps to complete the Form:</h2>
+            <ol type="I">
+                <li>Fill in your name.</li>
+                <br>
+                <li>Provide a valid email address.</li>
+                <br>
+                <li>Create a password with at least 8characters.</li>
+                <br>
+                <li>Select your date of birth.</li>
+                <br>
+                <li>Choose your country of origin from the dropdown menu.</li>
+                <br>
+                <li>Select your gender.</li>
+                <br>
+                <li>Check your favorite game.</li>
+                <br>
+                <li>Press the button to submit the form.</li>
+            </ol>
+            <br><br>
+            <!-- Add an ordered list with roman numerals ends here -->
+
+            <!-- Add an external image from pexels.com starts here -->
+            <img src="https://images.pexels.com/photos/7777513/pexels-photo-7777513.jpeg?auto=compress&cs=tinysrgb&w=600" width=400 height=400 alt="Two people fighting">
+            <br><br>
+            <!-- Add an external image from pexels.com ends here -->
+
+        </section>
+        <br><br>
+
+        <!-- Section of the table of 5 contacts with; name, address, mobile and emails starts here -->
+        <section>
+            <table style="border-collapse: collapse; border: 1px solid black;">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid black; padding: 8px;">Name</th>
+                        <th style="border: 1px solid black; padding: 8px;">Address</th>
+                        <th style="border: 1px solid black; padding: 8px;">Mobile</th>
+                        <th style="border: 1px solid black; padding: 8px;">Email</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid black; padding: 8px;">Jane Mugambi</td>
+                        <td style="border: 1px solid black; padding: 8px;">321 Kimathi Street, Nakuru, Kenya</td>
+                        <td style="border: 1px solid black; padding: 8px;">+254745678901</td>
+                        <td style="border: 1px solid black; padding: 8px;">jane@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border: 1px solid black; padding: 8px;">Orkot Kurnei</td>
+                        <td style="border: 1px solid black; padding: 8px;">789 Oginga Odinga Road, Kisumu, Kenya</td>
+                        <td style="border: 1px solid black; padding: 8px;">+254723456789</td>
+                        <td style="border: 1px solid black; padding: 8px;">kurnei@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border: 1px solid black; padding: 8px;">Leonel Wanjiku</td>
+                        <td style="border: 1px solid black; padding: 8px;">456 Kenyatta Street, Mombasa, Kenya</td>
+                        <td style="border: 1px solid black; padding: 8px;">+254734567890</td>
+                        <td style="border: 1px solid black; padding: 8px;">lwanjiku@yahoo.com</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border: 1px solid black; padding: 8px;">Austine Makutwa</td>
+                        <td style="border: 1px solid black; padding: 8px;">123 Moi Avenue, Nairobi, Kenya</td>
+                        <td style="border: 1px solid black; padding: 8px;">+254756789012</td>
+                        <td style="border: 1px solid black; padding: 8px;">makutwa_7@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <br><br>
+        <!-- Section of the table of 5 contacts with; name, address, mobile and emails ends here -->
+
+        <!-- Registration form section starts here -->
+        <section>
+            <form action="#" method="post">
+                <!-- Name field label starts here -->
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required><br><br>
+                <!-- Name field label ends here -->
+
+                <!-- Email field label and input starts here -->
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email e.g name@gmail.com" required><br><br>
+                <!-- Email field label and input ends here -->
+
+                <!-- Password field label and input starts here -->
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" placeholder="Enter your password" min-length="8"  required><br><br>
+                <!-- Password field label and input ends here -->
+
+                <!-- Date field label and input starts here -->
+                <label for="dob">Date of Birth: </label>
+                <input type="date" name="dob" id="dob" required><br><br>
+                <!-- Date field label and input starts here -->
+
+                <!-- Dropdown menu field starts here -->
+                <label for="country">Country: </label>
+                <select name="country" id="country" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="uganda">Uganda</option>
+                    <option value="tanzania">Tanzania</option>
+                    <option value="rwanda">Rwanda</option>
+                    <option value="burundi">Burundi</option>
+                    <option value="somalia">Somalia</option>
+                </select><br><br>
+                <!-- Dropdown menu field ends here -->
+
+                <!-- Radio Buttons starts here -->
+                <label>Select Your Gender:</label>
+                <br><br>
+
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <br><br>
+
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <br><br>
+
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+                <br><br>
+                <!-- Radio Buttons ends here -->
+
+                <!-- Checkboxes starts here -->
+                <label>Select your game:</label>
+                <br><br>
+
+                <input type="checkbox" id="nfs" name="game" value="nfs">
+                <label for="nfs">NFS</label>
+                <br><br>
+
+                <input type="checkbox" id="kombat" name="game" value="kombat">
+                <label for="kombat">Mortal Kombat</label>
+                <br><br>
+
+                <input type="checkbox" id="fifa" name="game" value="fifa">
+                <label for="fifa">FIFA</label>
+                <br><br>
+                <!-- Checkboxes ends here -->
+
+                <!-- Submit Button starts here-->
+                <button type="submit">Submit</button>
+                <!-- Submit Button ends here -->
+            </form>
+        </section>
+        <!-- Registration form section ends here -->
+    </main>
+</body>
+</html>
